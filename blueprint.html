@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CampusGuessr</title>
+        <link rel="stylesheet" type="text/css" href="blueprint.css" />
+    </head>
+    <body onload="randomImageGenerator();">
+        <div class="title">
+            Welcome to CampusGuessr!
+        </div>
+
+        <div class="body-content">
+            <label id="points">0 Points</label>
+            <label id="js-timeout">2:00</label>
+        </div>
+        
+        <div class="body-content2">
+            <form>
+                <input type="radio" name="choice" value="college-name-1">
+                <label for="option1" id="option1"></label><br>
+                <input type="radio" name="choice" value="college-name-2">
+                <label for="option2" id="option2"></label><br>
+                <input type="radio" name="choice" value="college-name-3">
+                <label for="option3" id="option3"></label><br>
+                <input type="radio" name="choice" value="college-name-4">
+                <label for="option4" id="option4"></label><br>
+            </form>
+    
+            <div class="button-content">
+                <button class="guess-button" onclick="checkImage();">Guess!</button>
+                <button class="new-image-button" onclick="randomImageGenerator();">New Image</button><br>
+            </div>
+            <div>
+                <button class="new-image-button" onclick='startTimer();'>Start Timer</button>
+                <button class="new-image-button" onclick='stopTimer();'>Stop Timer</button>
+                <button class="new-image-button" onclick='resetTimer2();'>Reset Timer</button>
+            </div>
+        </div>
+        
+    </body>
+</html>
+
+<script src="generator.js"></script>
